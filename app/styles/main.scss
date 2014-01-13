@@ -2,6 +2,62 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+.navbar {
+    border-radius: 0px;
+}
+.bubble {
+    height: auto;
+    background-color: #f5f5f5;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #c2c7d0;
+    padding: 10px 10px;
+    width: 31.25%;
+    min-width: 300px;
+    float: left;
+    /*font-family: 'Quando', serif;*/
+    box-shadow: 5px 5px 2px #888888;
+    letter-spacing: .1em;
+}
+.bubble-content{
+    height: 100px;
+    overflow: hidden;
+}
+.bubble-header {
+    color: #26b061;
+    font-size: 20px;
+}
+a {
+    color: #26b061;
+    text-decoration: none;
+}
+a.navbar-brand{
+    max-width: 250px;
+    text-shadow: 0px, 2px, 3px, #555;
+}
+a:hover {
+    text-decoration: none;
+    color: #049040;
+}
+.navbar-brand .word{
+    overflow: hidden;
+    display: inline-block;
+    width: 11px;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-brand:hover > .word{
+    width: 100px;
+}
+
+.navbar-form {
+  min-width: 381px;
+}
+.form-group {
+  width: 150px;
+}
+.container {
+  min-width: 600px;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -11,17 +67,12 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+.footer
+s{}
 
 /* Custom page header */
 .header {
@@ -47,30 +98,9 @@ body {
     margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
     }
 
     /* Remove the padding we set earlier */
@@ -83,9 +113,5 @@ body {
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
     }
 }
